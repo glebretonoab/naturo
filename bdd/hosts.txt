@@ -1,0 +1,12 @@
+#VHost de jojo2.fr
+<VirtualHost *:80>
+	ServerName jojo2.fr
+	DocumentRoot c:\wamp\www\extra\jojo2
+	
+	<Directory c:\wamp\www\extra\jojo2>
+		DirectoryIndex index.php
+		Options FollowSymLinks MultiViews
+		AllowOverride all
+		Allow from all
+	</Directory>
+</VirtualHost>

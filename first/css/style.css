@@ -1,0 +1,606 @@
+html, body {height: 100%;}
+
+body {
+	background: #fdfcee url('../images/top.jpg') repeat-x;
+	margin: 0;
+	padding: 0;
+}
+
+/*******************************************************************************************
+    GOOGLE FONTS
+
+font-family: 'Kaushan Script', cursive;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+
+********************************************************************************************/
+
+/*******************************************************************************************
+    STANDARDS
+********************************************************************************************/
+h1 {
+	margin: 0;
+	padding: 8px 0 0 48px;
+	background: url('../images/feuille2.png') 0 0 no-repeat;
+	color: #98b527;
+	font-size: 36px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	line-height: 29px;
+	height: 77px;
+}
+
+h1 span {
+	float: left;
+	color: #777;
+	font-size: 16px; 
+	margin-left: 3px;
+}
+
+ul {
+	list-style: none;
+}
+
+ul, li, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+input[type=text] {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	color: #333333;
+	padding: 3px 5px 3px;
+	margin-right: 8px;
+	font-family: "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+textarea {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	color: #222;
+	padding: 3px 5px 3px;
+	margin-top: 4px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+	max-width: 100%;
+}
+
+/*******************************************************************************************
+      LINKS, BUTTONS, IMAGES WITH FADE EFFECT
+********************************************************************************************/
+
+a.arrow-spin-link {
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+    position:relative;
+    left:-2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #99b32b;
+    font-weight: bold;
+}
+
+a.arrow-spin-link:hover {
+    color:#444;
+    cursor:pointer;
+}
+
+a.arrow-spin-link span.arrow {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image:url('../images/arrow-right-25px.png');
+    position: relative;
+    top: 6px;
+    left: -2px;
+}
+
+a.arrow-spin-link:hover span.arrow {
+    background-image:url('../images/arrow-right-25px_hov.png');
+}
+
+a.link {
+    font-size: 16px;
+    display: block;
+    position: relative;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 1px solid #39750a;
+	padding: 8px 0 8px 29px;
+}
+
+a.link:hover {
+    color: #000;
+    cursor: pointer;
+    background: #7fb158;
+}
+
+a.link span.arrow {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image:url('../images/arrow-right-25px_hov.png');
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+a.link:hover span.arrow {
+	background-image:url('../images/arrow-right-25px.png');
+}
+
+.display-none {
+	display: none;
+}
+
+/*******************************************************************************************
+    GLOBAL
+********************************************************************************************/
+#container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+/*******************************************************************************************
+    HEADER
+********************************************************************************************/
+#header {
+	text-align: center;
+	height: 195px;
+}
+
+#header .deco_left,
+#header .deco_right {
+	position: absolute;
+}
+
+#header .deco_left {
+	background: url('../images/deco-left.png') 0 -19px no-repeat;
+	width: 404px;
+	height: 195px;
+	margin: 0 0 0 33px;
+}
+
+#header .deco_right {
+	background: url('../images/deco-right.png') 0 0 no-repeat;
+	width: 153px;
+	height: 154px;
+	margin: -14px 0 0 787px;
+}
+
+#header .main {
+	font-family: 'Kaushan Script', cursive;
+	padding: 21px 0 0 0;
+	position: relative;
+}
+
+#header .main a {
+	text-decoration: none;
+	font-size: 60px;
+	color: #96b41e;
+}
+
+#header .main a span{
+	color: #fedf03;
+}
+
+#header .main .bottom {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	color: #98b527;
+	margin: 1px auto;
+	background: url('../images/bottom.png') 0 13px repeat-x;
+	width: 414px;
+}
+
+#header .main .bottom span {
+	color: #000;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+/*******************************************************************************************
+    CONTENT
+********************************************************************************************/
+#main .visuel {
+	height: 326px;
+	background: #CCC;
+	position: relative;
+	z-index: 1;
+}
+
+#main .menu_home {
+	width: 240px;
+	background: url('../images/feuille3.png') center top no-repeat;
+	padding: 259px 0 0 0;
+	margin: -287px 0 0 42px;
+	position: relative;
+	z-index: 2;
+}
+
+#main .menu_home .menu {
+	border-top: 7px solid #fdfcee;
+	width: 240px;
+	margin: 0 42px 0 0;
+}
+
+#main .menu_home .ssmenu {
+	margin: -40px 0 0 240px;
+	width: 240px;
+	position: absolute;
+}
+
+#main .menu_home a.link {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 1px solid #39750a;
+	padding: 8px 0 8px 34px;
+}
+
+#main .menu_home a.link:hover,
+#main .menu a.hover {
+    color: #000;
+    cursor: pointer;
+    background: #7fb158;
+}
+
+#main .menu_home a.link span.arrow {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image:url('../images/arrow-right-25px_hov.png');
+    position: absolute;
+    top: 7px;
+    left: 9px;
+}
+
+#main .menu_home a.link:hover span.arrow {
+	background-image:url('../images/arrow-right-25px.png');
+}
+
+#main .menu {
+	margin: 0 0 0 19px;
+	width: 180px;
+	border-top: 4px solid #c5d57e;
+	background: url('../images/cat-bg.png') center top no-repeat;
+	float: left;
+}
+
+#main .ssmenu {
+	display: none;
+	width: 180px;
+	margin: -36px 0 0 180px;
+	position: absolute;
+	background: url('../images/cat-bg2.jpg') center top no-repeat;
+}
+
+#main .ssmenu a.link {
+	border-bottom: none;
+	border-top: 1px solid #FFF;
+}
+
+
+#main .ssmenu li:first-child a {
+	border-top: 1px solid #39750a;
+}
+
+/*********** HOME *************/
+#main .context {
+	height: 333px;
+	margin: 28px 0 0 0;
+}
+
+#main .context .message {
+	background: url('../images/forme.png') 336px 12px no-repeat;
+	padding: 29px 0 0 0;
+	margin: 0 0 46px 0;
+}
+
+#main .context .message p {
+	color: #9e9e9d;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 6px 0 0 0;
+}
+
+#main .context .horaires {
+	background: #FFF;
+	padding: 5px 0 5px 324px;
+}
+
+#main .context .horaires h6 {
+	color: #96b41e;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 21px;
+	margin: 0 0 2px 0;
+}
+
+#main .context .horaires p {
+	margin: 0 0 10px 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#main .context .horaires p span {
+	font-size: 15px;
+	color: #767676;
+	font-weight: normal;
+}
+
+#main .context .horaires p span span {
+	font-size: 10px;
+}
+
+#main .context .horaires .number {
+	color: #96b41e;
+}
+
+#main .context .horaires .number span {
+	color: #fe8a19;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	text-shadow: 3px 1px 3px rgb(184, 184, 184);
+	margin: -8px 0 0 7px;
+	position: absolute;
+}
+
+#main .context .tree {
+	background: url('../images/tree.png') no-repeat;
+	position: absolute;
+	width: 152px;
+	height: 308px;
+	margin: 25px 0 0 866px;
+}
+
+/*********** CONTACT *************/
+
+#main .content {
+	float: left;
+	margin: 0 0 40px 45px;
+	width: 780px;
+}
+
+#main .infos p {
+	text-align: justify;
+	font-size: 17px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #636262;
+}
+
+#main .coord {
+	float: left;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 0 0 10px 5px;
+}
+
+#main .coord span {
+	color: #999;
+}
+
+#main .num {
+	float: right;
+	background: url('../images/tel.png') no-repeat;
+	padding: 0 0 0 34px;
+	color: #fe8a19;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	text-shadow: 3px 4px 13px rgb(224, 224, 224);
+	margin: -6px 52px 0 0;
+}
+
+#main .google-map {
+	border: 2px solid #9db92d;
+	width: 730px;
+	height: 308px;
+	margin: 0 0 36px 0;
+}
+
+#contact-form {
+	margin: 0 0 30px 0;
+}
+
+#contact-form #contact-desc {
+	width: 205px;
+	float: left;
+	text-align: right;
+	border-right: 2px solid #99b32b;
+	padding: 0 45px 0 0;
+}
+
+#contact-form #contact-desc h2 {
+	margin: 0 0 25px 0;
+	color: #96b41e;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 24px;
+	line-height: 26px;
+}
+
+#contact-form #contact-desc p {
+	font: normal 14px/20px "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+	font-size: 14px;
+	color: #50504e;
+	margin: 0 0 25px 0;
+}
+
+#contact-form #contact-desc .back {
+	background: url('../images/bubble.png') no-repeat;
+	width: 119px;
+	height: 44px;
+	padding: 15px 0 0 1px;
+	text-decoration: none; 
+	text-align: center;
+	display: block;
+	color: #96b41e;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 18px;
+	float: right;
+}
+
+#contact-form #contact-container {
+	float: left;
+	margin: 0 0 0 49px;
+	width: 434px;
+}
+
+#contact-form #contact-container .commonControlLabel {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 20px;
+	color: #888;
+	font-family: 'Yanone Kaffeesatz', sans-serif !important;
+}
+
+.commonControlLabelItalic {
+	font-size: 10px;
+	font-style: italic;
+	color: #999;
+	font-family: "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+}
+
+.commonInput {
+	background-color: #FFF;
+	margin: 5px 0px 10px;
+	width: 70%;
+}
+
+.contactInputHuman {
+	background-color: #FFF;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 70px;
+}
+
+.commonTextarea {
+	background-color: #FFF;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 150px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#contactErrorPanel {
+	height: 10px;
+	padding: 8px;
+	padding-left: 3%;
+	border: 1px solid #EE6644;
+	background-color: #EE6644;
+	margin-bottom: 15px;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 11px;
+	color: #FFF;
+	width: 90%;
+	font-family: "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+}
+
+.commonControlErrorMsg {
+	font-size: 11px;
+	font-style: italic;
+	color: #a20;
+	visibility: hidden;
+	font-family: "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+}
+
+/*******************************************************************************************
+    FOOTER
+********************************************************************************************/
+#footer {
+	background: url('../images/footer.jpg') 0 0 repeat-x;
+	height: 122px;
+	float: left;
+	clear: left;
+	width: 100%;
+	position: relative;
+}
+
+#footer .content{
+	margin: 0 auto;
+	width: 1024px;
+}
+
+#footer .content .localisation{
+	height: 90px;
+}
+
+#footer .content .localisation .title {
+	background: url('../images/feuille.png') 0 15px no-repeat;
+	height: 63px;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 30px;
+	padding: 21px 0 0 41px;
+	text-shadow: 3px 4px 13px rgb(124, 124, 124);
+	margin: 0 0 0 48px;
+	float: left;
+}
+
+#footer .content .localisation .title a {
+	text-decoration: none;
+	color: #f2f4d8;
+}
+
+#footer .content .localisation .map {
+	background: url('../images/map.png') 0 0 no-repeat;
+	height: 75px;
+	padding: 15px 0 0 200px;
+	float: left;
+	margin: 0 0 0 36px;
+}
+
+#footer .content .localisation .map p {
+	margin: 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	color: #FFF;
+}
+
+#footer .content .localisation .map span {
+	color: #000;
+	font-weight: bold;
+}
+
+#footer .content .copyright {
+	text-align: center;
+	color : #b0b572;
+	font-family: verdana;
+	font-size: 11px;
+	padding: 8px 0 0 0;
+}
+
+#footer .content .fb {
+	width: 234px;
+	height: 82px;
+	background: url('../images/body-fb.png') 0 0 no-repeat;
+	float: right;
+	margin: 8px 0 0 0;
+}
+
+#footer .content .fb a {
+	background: url('../images/fb.png') right no-repeat;
+	padding: 0 55px 0 0;
+	display: block;
+	height: 48px;
+	width: 95px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	margin: 22px 0 0 66px;
+}
